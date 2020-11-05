@@ -91,7 +91,7 @@ RUN sed -i 's/USE_HOME = False/USE_HOME = True/g' MobSF/settings.py && \
     sed -i "s#ADB_BINARY = ''#ADB_BINARY = '/usr/bin/adb'#" MobSF/settings.py
 
 # Postgres support is set to false by default
-ARG POSTGRES=False
+ARG POSTGRES=True
 
 ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=password
